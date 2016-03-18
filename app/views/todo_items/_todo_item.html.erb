@@ -1,6 +1,5 @@
 <% if todo_item.completed? %>
     	<div class="row tasks">
-    	    <div class="col-sm-1 col-xs-1"></div>
             <div class="col-md-3 col-sm-3 col-xs-3 complete">
     			<%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
     				<i style="opacity: 0.4;" class="fa fa-check"></i>
@@ -14,12 +13,10 @@
     				<i class="fa fa-trash"></i>
     			<% end %>
     		</div>
-    		<div class="col-sm-1 col-xs-1"></div>
         </div>
 		
 	<% else %>
     	<div class="row tasks">
-    		<div class="col-sm-1 col-xs-1"></div>
             <div class="col-md-3 col-sm-3 col-xs-3 complete">
     			<%= link_to complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch do %>
     				<i class="fa fa-check"></i>
@@ -33,6 +30,5 @@
     				<i class="fa fa-trash"></i>
     			<% end %>
     		</div>
-    		<div class="col-sm-1 col-xs-1"></div>
     	</div>
 	<% end %>
