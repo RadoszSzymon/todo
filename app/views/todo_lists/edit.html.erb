@@ -1,6 +1,22 @@
-<h1>Editing Todo List</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @todo_list %> |
-<%= link_to 'Back', todo_lists_path %>
+<div class="container">
+    <div class="row content">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 form_new_list">
+        <h1 class="edit_title">Edit List</h1>
+        <%= render 'form' %>
+    
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    
+    <div class="row edit_options">   
+        <div class="col-md-4"></div>
+        <div class="col-md-2">
+            <div class="btn btn-primary btn_option_edit"><i class="fa fa-television option_icon_edit"></i><%= link_to 'Show', @todo_list %></div>
+        </div>
+        <div class="col-md-2">
+            <div class="btn btn-primary btn_option_edit"><i class="fa fa-reply option_icon_edit"></i><%= link_to 'Back', todo_lists_path %></div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

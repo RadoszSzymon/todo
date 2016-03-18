@@ -1,21 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<p class="tasks_title">
   <%= @todo_list.title %>
 </p>
 
-<p>
-  <strong>Description:</strong>
+<p class="tasks_description">
   <%= @todo_list.description %>
 </p>
-
-<div id="todo_items_wrapper">
+<div class="tasks_container">
   <%= render @todo_list.todo_items %>
-  <div id="form">
-    <%= render "todo_items/form" %>
-  </div>
 </div>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+  <%= render "todo_items/form" %>
+
+<div class="row options">
+  <div class="col-md-3 col-sm-3 "></div>
+  <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="btn btn-primary btn_option"><i class="fa fa-pencil-square-o option_icon"></i><%= link_to 'Edit', edit_todo_list_path(@todo_list) %></div>
+  </div>
+  <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="btn btn-primary btn_option"><i class="fa fa-trash option_icon"></i><%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: { confirm: "Are you sure?"} %></div>
+  </div>
+  <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="btn btn-primary btn_option"><i class="fa fa-reply option_icon"></i><%= link_to 'Back', todo_lists_path %></div>
+  </div>
+  <div class="col-md-3 col-sm-3 "></div>
+</div>
+

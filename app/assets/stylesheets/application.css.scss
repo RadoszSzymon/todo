@@ -1,0 +1,310 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+ 
+$dark: #14171f;
+$white: #fff;
+$blue: #264cb6;
+$red: #cd5151;
+$gray: #BCC5D1;
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: $white;
+    min-height: 100vh;
+}
+
+.jumbotron{
+    background-color: $dark;
+    margin:0;
+    .container{
+        .logo{
+            width:18em;
+            margin:0;
+        } 
+        .content{
+            .text{
+                border: 1px solid $white;
+                border-radius: 15px;
+                margin:3em 0 0 0;
+                padding:0;
+                .todo_list_sub_title:last-child{
+                    border-bottom: none;
+                }
+                .todo_list_title{
+                    font-size: 6em;
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        color: $gray;
+                    }
+                }
+                .todo_list_sub_title{
+                    border-bottom: 1px solid $white;
+                    margin:0;
+                    padding-bottom: 1.2em;
+                    font-size: 2em;
+                    color:$white;
+                }
+            }
+
+            .title{
+                color: $white;
+                padding:1em;
+            }
+            .btn_new{
+                background-color: $dark;
+                border:2px solid $blue;
+                font-size: 2.3em;
+                border-radius: 40px;
+                width:6em;
+                height:2em;
+                color: $white;
+                margin: 1em 0;
+                font-weight:100;
+            }
+            .form_new_list{
+                margin-top: 2em;
+                .edit_title{
+                    font-size: 3em;
+                }
+                .btn_new:hover{
+                    opacity: 0.9;
+                    background-color: $blue;
+                }
+            }
+        }
+        
+        .form_options{
+            .form_btn_option{
+                background-color: $dark;
+                border: 2px solid $blue;
+                font-size: 1.3em;
+                border-radius: 40px;
+                width:100%;
+                height:2em;
+                font-weight:100;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; 
+            }
+            .form_btn_option:hover{
+                opacity: 0.9;
+                background-color: $blue;
+            }
+            .form_option_icon{
+                padding: 0 0.5em;
+            } 
+            a{
+                color:$white;
+                text-decoration:none;
+            }
+        }
+        
+        .btn{
+            .add{
+                .btn-primary{
+                    background-color: $dark;
+                    border: 2px solid $blue;
+                    font-size: 2.3em;
+                    border-radius: 40px;
+                    width:6em;
+                    height:2em;
+                    font-weight:100;
+                }
+                .btn-primary:hover{
+                    opacity: 0.9;
+                    background-color: $blue;
+                }
+                padding-top: 3em;
+                
+            }
+        }
+        
+        /*tasks list*/
+        .tasks_container{
+            border: 1px solid $white;
+            border-radius: 15px;
+                
+            .tasks{
+                margin:0;
+                padding:0;
+                border-bottom: 1px solid $white;
+                height:7em;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; 
+            }
+            .tasks:last-child{
+                    border-bottom: none;
+            }
+            .task_desciption{
+                border-right: 1px solid $white;
+                border-left: 1px solid $white;
+                height:100%;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; 
+                p{
+                    margin:0;
+                }
+            }
+            .complete{
+                font-size: 3.5em;
+                i{
+                   color:$blue;  
+                }
+                i:hover{
+                    opacity: 0.9;
+                }
+            }
+            .delete{
+                font-size: 3.5em;
+                i{
+                   color: $red; 
+                }
+                i:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+        
+        .edit_title{
+            font-size: 3em;
+            padding: 0.6em 0 0.8em 0;
+        }
+        
+        .form_title, .form_description{
+            font-size: 2em;
+            font-weight: 100;
+            padding-bottom:0.5em;
+        }
+        
+        #notice{
+            color: $red;
+            padding: 0.7em;
+        }
+        
+        .tasks_title{
+            font-size: 4em;
+            font-weight: 400;
+        }
+        
+        .tasks_description{
+            padding-bottom:1em;
+            color:$gray;
+        }
+        
+        .new_item_form{
+            margin: 3em 0 0 1em;
+            padding:2em 0;
+            .new{
+                background-color: $dark;
+                border:2px solid $blue;
+                font-size: 2.3em;
+                border-radius: 40px;
+                width:6em;
+                height:2em;
+                color: $white;
+                margin: 1em 0;
+                font-weight:100;
+            }
+            .new:hover{
+               background-color: $blue; 
+            }
+            .new_item_field{
+                width:40%;
+                margin: 0 auto;
+            }
+        }
+        
+        .options{
+            a{
+                text-decoration:none;
+                color: $white;
+            }
+            .btn_option{
+                background-color: $dark;
+                border: 2px solid $blue;
+                font-size: 1.3em;
+                border-radius: 40px;
+                width:100%;
+                height:2em;
+                font-weight:100;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; 
+            }
+            .btn_option:hover{
+                opacity: 0.9;
+                background-color: $blue;
+            }
+            .option_icon{
+                padding: 0 0.5em;
+            }
+        }
+        
+        .actions{
+            .btn_new{
+                background-color: $dark;
+                border:2px solid $blue;
+                font-size: 2.3em;
+                border-radius: 40px;
+                width:6em;
+                height:2em;
+                color: $white;
+                margin: 1em 0;
+                font-weight:100;
+            }
+            .btn_new:hover{
+               background-color: $blue; 
+            }
+        }
+        .edit_options{
+            .btn_option_edit{
+                background-color: $dark;
+                border: 2px solid $blue;
+                font-size: 1.3em;
+                border-radius: 40px;
+                width:100%;
+                height:2em;
+                font-weight:100;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; 
+            }
+            .btn_option_edit:hover{
+                opacity: 0.9;
+                background-color: $blue;
+            }
+            .option_icon_edit{
+                padding: 0 0.5em;
+            }
+            a{
+                color:$white;
+                text-decoration: none;
+            }
+        }
+    }
+}
