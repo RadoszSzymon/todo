@@ -56,10 +56,7 @@ $gray: #BCC5D1;
 @media screen and (max-width: 650px) {
  .jumbotron{
      .container{
-         .logo{
-            width:4em;
-            margin:0;
-        } 
+         
          .content{
              .text{
                  font-size: 80%;
@@ -92,10 +89,7 @@ $gray: #BCC5D1;
 @media screen and (max-width: 550px) {
  .jumbotron{
      .container{
-         .logo{
-             width:4em;
-            margin:0;
-        } 
+        
          .content{
              .text{
                  font-size: 70%;
@@ -128,10 +122,7 @@ $gray: #BCC5D1;
 @media screen and (max-width: 470px) {
  .jumbotron{
      .container{
-         .logo{
-             width:4em;
-            margin:0;
-        } 
+         
          .content{
              .text{
                  font-size: 55%;
@@ -164,13 +155,7 @@ $gray: #BCC5D1;
 @media screen and (max-width: 280px) {
  .jumbotron{
      .container{
-         .logo{
-             img{
-                 width:4em;
-             }
-            width:4em;
-            margin:0;
-        } 
+         
          .content{
              .text{
                  font-size: 45%;
