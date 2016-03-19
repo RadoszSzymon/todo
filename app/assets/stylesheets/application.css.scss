@@ -21,15 +21,198 @@ $blue: #264cb6;
 $red: #cd5151;
 $gray: #BCC5D1;
 
-html{
-    height: 100%;
+@media screen and (max-width: 992px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 90%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+                 .delete{
+                    
+                 }
+             }
+         }
+     }
+ }
 }
+
+@media screen and (max-width: 650px) {
+ .jumbotron{
+     .container{
+         .logo{
+            width:4em;
+            margin:0;
+        } 
+         .content{
+             .text{
+                 font-size: 80%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+                 .delete{
+                    
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .jumbotron{
+     .container{
+         .logo{
+             width:4em;
+            margin:0;
+        } 
+         .content{
+             .text{
+                 font-size: 70%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+                 .delete{
+                    
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 470px) {
+ .jumbotron{
+     .container{
+         .logo{
+             width:4em;
+            margin:0;
+        } 
+         .content{
+             .text{
+                 font-size: 55%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+                 .delete{
+                    
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 280px) {
+ .jumbotron{
+     .container{
+         .logo{
+             img{
+                 width:4em;
+             }
+            width:4em;
+            margin:0;
+        } 
+         .content{
+             .text{
+                 font-size: 45%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+                 .delete{
+                    
+                 }
+             }
+         }
+     }
+ }
+}
+
+html{
+    margin: 0;
+    height: 100vh;
+}
+
 
 body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: $white;
-    min-height: 100vh;
+    margin: 0;
+    height: 100vh;
+    background-color: $dark;
 }
 
 .jumbotron{
@@ -199,6 +382,10 @@ body{
             font-size: 2em;
             font-weight: 100;
             padding-bottom:0.5em;
+        }
+        
+        .form-control{
+            resize:none;
         }
         
         #notice{

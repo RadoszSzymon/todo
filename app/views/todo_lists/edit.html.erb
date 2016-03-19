@@ -12,10 +12,10 @@
     <div class="row edit_options">   
         <div class="col-md-4"></div>
         <div class="col-md-2">
-            <div class="btn btn-primary btn_option_edit"><i class="fa fa-television option_icon_edit"></i><%= link_to 'Show', @todo_list %></div>
+            <div><%= link_to 'Show', @todo_list,  class: "btn btn-primary btn_option_edit" %></div>
         </div>
         <div class="col-md-2">
-            <div class="btn btn-primary btn_option_edit"><i class="fa fa-reply option_icon_edit"></i><%= link_to 'Back', todo_lists_path %></div>
+            <div><%= link_to 'Back', todo_lists_path, class: "btn btn-primary btn_option_edit" %></div>
         </div>
         <div class="col-md-4"></div>
     </div>
