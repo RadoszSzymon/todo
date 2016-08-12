@@ -4,14 +4,13 @@ class TodoListsController < ApplicationController
   # GET /todo_lists
   # GET /todo_lists.json
   def index
-    @todo_lists = TodoList.all
+    @todo_lists = current_user.todo_lists.all
   end
 
   # GET /todo_lists/1
   # GET /todo_lists/1.json
   def show
   end
-
   # GET /todo_lists/new
   def new
     @todo_list = current_user.todo_lists.build
