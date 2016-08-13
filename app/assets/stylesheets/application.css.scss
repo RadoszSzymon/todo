@@ -204,6 +204,30 @@ body{
     background-color: $dark;
     margin:0;
     .container{
+        .form_header{
+            padding: .7em 0 1em 0;
+        }
+        .actions{
+            padding: 1em 0;
+            .submit_button{
+                background-color: $dark;
+                border: 2px solid $blue;
+                font-size: 1.8em;
+                border-radius: 40px;
+                padding:0 2em;
+                height:2em;
+                font-weight:100;  
+            }
+            .submit_button:hover{
+                opacity: 0.9;
+                background-color: $blue;
+            }
+        }
+        .welcome_container{
+             p{
+                 padding: 2em 0;
+             }
+        }
         .logo{
             width:18em;
             margin:0;
