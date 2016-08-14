@@ -15,7 +15,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
  
-$dark: #14171f;
+$dark: #1B1D25;
 $white: #fff;
 $blue: #264cb6;
 $red: #cd5151;
@@ -198,6 +198,10 @@ body{
     margin: 0;
     height: 100vh;
     background-color: $dark;
+}
+
+label{
+    	visibility: visible;
 }
 
 .jumbotron{
@@ -486,6 +490,7 @@ body{
                 border: 2px solid $blue;
                 font-size: 1.3em;
                 border-radius: 40px;
+                margin-bottom: .5em;
                 width:100%;
                 height:2em;
                 font-weight:100;
