@@ -11,185 +11,21 @@
  * file per style scope.
  *
  */
- 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
- 
-$dark: #1B1D25;
+
+$dark: #141720;
 $white: #fff;
 $blue: #264cb6;
 $red: #cd5151;
 $gray: #BCC5D1;
-
-@media screen and (max-width: 992px) {
- .jumbotron{
-     .container{
-         .content{
-             .text{
-                 font-size: 90%;
-             }
-         }
-         .tasks_container{
-             .tasks{
-                 height:120%;
-                 p{
-                     font-size:90%;
-                     padding:0 0.4em;
-                 }
-                 i{
-                     width:60%;
-                 }
-                 .delete, .complete{
-                     padding:0;
-                     font-size:2em;
-                     float: center;
-                 }
-                 .delete{
-                    
-                 }
-             }
-         }
-     }
- }
-}
-
-@media screen and (max-width: 650px) {
- .jumbotron{
-     .container{
-         
-         .content{
-             .text{
-                 font-size: 80%;
-             }
-         }
-         .tasks_container{
-             .tasks{
-                 height:120%;
-                 p{
-                     font-size:90%;
-                     padding:0 0.4em;
-                 }
-                 i{
-                     width:60%;
-                 }
-                 .delete, .complete{
-                     padding:0;
-                     font-size:2em;
-                     float: center;
-                 }
-                 .delete{
-                    
-                 }
-             }
-         }
-     }
- }
-}
-
-@media screen and (max-width: 550px) {
- .jumbotron{
-     .container{
-        
-         .content{
-             .text{
-                 font-size: 70%;
-             }
-         }
-         .tasks_container{
-             .tasks{
-                 height:120%;
-                 p{
-                     font-size:90%;
-                     padding:0 0.4em;
-                 }
-                 i{
-                     width:60%;
-                 }
-                 .delete, .complete{
-                     padding:0;
-                     font-size:2em;
-                     float: center;
-                 }
-                 .delete{
-                    
-                 }
-             }
-         }
-     }
- }
-}
-
-@media screen and (max-width: 470px) {
- .jumbotron{
-     .container{
-         
-         .content{
-             .text{
-                 font-size: 55%;
-             }
-         }
-         .tasks_container{
-             .tasks{
-                 height:120%;
-                 p{
-                     font-size:90%;
-                     padding:0 0.4em;
-                 }
-                 i{
-                     width:60%;
-                 }
-                 .delete, .complete{
-                     padding:0;
-                     font-size:2em;
-                     float: center;
-                 }
-                 .delete{
-                    
-                 }
-             }
-         }
-     }
- }
-}
-
-@media screen and (max-width: 280px) {
- .jumbotron{
-     .container{
-         
-         .content{
-             .text{
-                 font-size: 45%;
-             }
-         }
-         .tasks_container{
-             .tasks{
-                 height:120%;
-                 p{
-                     font-size:90%;
-                     padding:0 0.4em;
-                 }
-                 i{
-                     width:60%;
-                 }
-                 .delete, .complete{
-                     padding:0;
-                     font-size:2em;
-                     float: center;
-                 }
-                 .delete{
-                    
-                 }
-             }
-         }
-     }
- }
-}
+$green: #75F57E;
 
 html{
     margin: 0;
     height: 100vh;
 }
-
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -210,7 +46,7 @@ label{
     .container{
         .form_header{
             padding: .7em 0 1em 0;
-        }
+        }/*form_header*/
         .actions{
             padding: 1em 0;
             .submit_button{
@@ -220,13 +56,13 @@ label{
                 border-radius: 40px;
                 padding:0 2em;
                 height:2em;
-                font-weight:100;  
+                font-weight:100;
             }
             .submit_button:hover{
                 opacity: 0.9;
                 background-color: $blue;
             }
-        }
+        }/*actions*/
         .welcome_container{
              p{
                  padding: 2em 0;
@@ -235,7 +71,7 @@ label{
         .logo{
             width:18em;
             margin:0;
-        } 
+        }
         .content{
             .text{
                 border: 1px solid $white;
@@ -263,7 +99,7 @@ label{
                     font-size: 2em;
                     color:$white;
                 }
-            }
+            }/*text*/
 
             .title{
                 color: $white;
@@ -290,8 +126,8 @@ label{
                     background-color: $blue;
                 }
             }
-        }
-        
+        }/* content */
+
         .form_options{
             .form_btn_option{
                 background-color: $dark;
@@ -303,7 +139,7 @@ label{
                 font-weight:100;
                 display: flex;
                 justify-content: center; /* align horizontal */
-                align-items: center; 
+                align-items: center;
             }
             .form_btn_option:hover{
                 opacity: 0.9;
@@ -311,13 +147,13 @@ label{
             }
             .form_option_icon{
                 padding: 0 0.5em;
-            } 
+            }
             a{
                 color:$white;
                 text-decoration:none;
             }
-        }
-        
+        }/* form_option */
+
         .btn{
             .add{
                 .btn-primary{
@@ -325,6 +161,7 @@ label{
                     border: 2px solid $blue;
                     font-size: 2.3em;
                     border-radius: 40px;
+                    margin: 0 1em;
                     width:6em;
                     height:2em;
                     font-weight:100;
@@ -334,15 +171,14 @@ label{
                     background-color: $blue;
                 }
                 padding-top: 3em;
-                
+
             }
-        }
-        
-        /*tasks list*/
+        }/* btn*/
+
         .tasks_container{
             border: 1px solid $white;
             border-radius: 15px;
-                
+
             .tasks{
                 margin:0;
                 padding:0;
@@ -350,7 +186,7 @@ label{
                 height:7em;
                 display: flex;
                 justify-content: center; /* align horizontal */
-                align-items: center; 
+                align-items: center;
             }
             .tasks:last-child{
                     border-bottom: none;
@@ -361,7 +197,7 @@ label{
                 height:100%;
                 display: flex;
                 justify-content: center; /* align horizontal */
-                align-items: center; 
+                align-items: center;
                 p{
                     margin:0;
                 }
@@ -369,7 +205,7 @@ label{
             .complete{
                 font-size: 3.5em;
                 i{
-                   color:$blue;  
+                   color:$blue;
                 }
                 i:hover{
                     opacity: 0.9;
@@ -378,44 +214,44 @@ label{
             .delete{
                 font-size: 3.5em;
                 i{
-                   color: $red; 
+                   color: $red;
                 }
                 i:hover{
                     opacity: 0.9;
                 }
             }
-        }
-        
+        }/* task_container */
+
         .edit_title{
             font-size: 3em;
             padding: 0.6em 0 0.8em 0;
         }
-        
+
         .form_title, .form_description{
             font-size: 2em;
             font-weight: 100;
             padding-bottom:0.5em;
         }
-        
+
         .form-control{
             resize:none;
         }
-        
+
         #notice{
-            color: $red;
+            color: $green;
             padding: 0.7em;
         }
-        
+
         .tasks_title{
             font-size: 4em;
             font-weight: 400;
         }
-        
+
         .tasks_description{
             padding-bottom:1em;
             color:$gray;
         }
-        
+
         .new_item_form{
             margin: 3em 0 0 1em;
             padding:2em 0;
@@ -431,14 +267,14 @@ label{
                 font-weight:100;
             }
             .new:hover{
-               background-color: $blue; 
+               background-color: $blue;
             }
             .new_item_field{
-                width:40%;
+                width:50%;
                 margin: 0 auto;
             }
-        }
-        
+        }/*new_item_form*/
+
         .options{
             .col-md-2 {
                 padding-top: 0.5em;
@@ -457,7 +293,7 @@ label{
                 font-weight:100;
                 display: flex;
                 justify-content: center; /* align horizontal */
-                align-items: center; 
+                align-items: center;
             }
             .btn_option:hover{
                 opacity: 0.9;
@@ -466,8 +302,8 @@ label{
             .option_icon{
                 padding: 0 0.5em;
             }
-        }
-        
+        }/* options */
+
         .actions{
             .btn_new{
                 background-color: $dark;
@@ -481,7 +317,7 @@ label{
                 font-weight:100;
             }
             .btn_new:hover{
-               background-color: $blue; 
+               background-color: $blue;
             }
         }
         .edit_options{
@@ -496,7 +332,7 @@ label{
                 font-weight:100;
                 display: flex;
                 justify-content: center; /* align horizontal */
-                align-items: center; 
+                align-items: center;
             }
             .btn_option_edit:hover{
                 opacity: 0.9;
@@ -509,7 +345,152 @@ label{
                 color:$white;
                 text-decoration: none;
             }
-        }
-    }
+        }/* edit_options*/
+    }/*container*/
+}/* jumbotron */
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 90%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+             }
+         }
+     }
+ }
 }
 
+@media screen and (max-width: 650px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 80%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 70%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 470px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 55%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+             }
+         }
+     }
+ }
+}
+
+@media screen and (max-width: 280px) {
+ .jumbotron{
+     .container{
+         .content{
+             .text{
+                 font-size: 45%;
+             }
+         }
+         .tasks_container{
+             .tasks{
+                 height:120%;
+                 p{
+                     font-size:90%;
+                     padding:0 0.4em;
+                 }
+                 i{
+                     width:60%;
+                 }
+                 .delete, .complete{
+                     padding:0;
+                     font-size:2em;
+                     float: center;
+                 }
+             }
+         }
+     }
+ }
+}
