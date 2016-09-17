@@ -2,11 +2,14 @@
     <p>Beat your procrastination using DoMore apps to make better results</p>
 
     <div class="row edit_options">
-        <div class="col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-            <%= link_to "Log in", new_user_session_path,  class: "btn btn-primary btn_option_edit" %>
+        <div class="col-sm-2 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+            <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn_option_edit" %>
         </div>
-        <div class="col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-            <%= link_to "Sign in", new_user_registration_path,  class: "btn btn-primary btn_option_edit" %>
+        <div class="col-sm-2 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+            <%= link_to "Sign in", new_user_registration_path, class: "btn btn-primary btn_option_edit" %>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+            <%= link_to "Sign in with Facebook", "/auth/facebook", class: "btn btn-primary btn_option_edit" %>
         </div>
     </div>
 </div>
