@@ -1,1 +1,10 @@
-DoMore is simple todo list app to boost your productivity. You can add lists with tasks. After completed your goal you can check this or delete item from your list.
+# DoMore
+ROR to-do app
+
+## Technologies used to build this app
+* Ruby On Rails 4.2.5
+* Bootstrap Sass
+
+
+## Author
+* Radosz Szymon
